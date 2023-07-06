@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	display: grid;
+	grid-template-columns: 20% 30% 20% 30%;
+	grid-template-rows: 50px 50px 400px 450px;
+	grid-template-areas: 
+		"head head head head"
+		"cent cent cent cent"
+		"mid mid mid mid"
+		"bot bot bot bot"
+	
+}
+.logo{
+	height: 50px;
+	width: 300px;
+	
+
+}
+
+.item{
+	background-color:white;
+	margin: 1px ;
+	
+}
+ul{
+	list-style: none;
+	margin: 0;
+}
+ul li{
+	padding: 15px 100px;
+	float: left;
+	
+}
+ul li a{
+	text-decoration: none;
+	color: black;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+ul li:hover{
+	background-color:dimgray;
+}
+
+.item01{
+	grid-area: head;
+	display: flex;
+	justify-content: center;
+}
+.item02{
+	grid-area: cent;
+}
+.item03{
+	grid-area: mid;
+}
+
+.item04{
+	grid-area: bot;
+	display: flex;
+	justify-content: center;
+}
+.data{
+	width: 32%;
+	height: 450px;
+	margin: 1%;
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	color: dimgray;
+}
+
+.data img{
+	width: 100%;
+	opacity: 1;
+	transition: all 0.5s linear;
+	transform: scale(1);
+}
+.data img:hover{
+opacity: 0.5;	
+	transform: scale(1.05);
+}
+.box {
+	width: 40%;
+	height: 360px;
+	margin: 1%;
+	float: left;
+	overflow: hidden;
+}
+.box01 {
+	width: 50%;
+	height: 360px;
+	margin: 1%;
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	color: dimgray;
+}
+.box img{
+	width: 100%;
+	opacity: 1;
+	transition: all 0.5s linear;
+	transform: scale(1);
+}
+.box img:hover{
+    opacity: 0.9;	
+	transform: scale(1.05);
+}
+.box01 h1{
+	padding: 90px 80px 5px 80px;
+}
+
+
+
